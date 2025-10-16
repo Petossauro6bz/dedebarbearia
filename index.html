@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dedé Barbearia</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Oswald:wght@600&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-dark position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-secondary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
+            <h1 class="mb-0 text-primary text-uppercase"><img class="img-fluid" src="img/Logo.png" alt=""></i> </h1>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Início</a>
+                <a href="about.html" class="nav-item nav-link">Sobre</a>
+                <a href="contact.html" class="nav-item nav-link">Contato</a>
+                <a href="service.html" class="nav-item nav-link">Serviços</a>
+                <a href="price.html" class="nav-item nav-link">Planos</a>
+                <a href="team.html" class="nav-item nav-link">Equipe</a>
+                <a href="open.html" class="nav-item nav-link">Funcionamento</a>
+                <!--<div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Páginas</a>
+                    <div class="dropdown-menu m-0">
+                        <a href="price.html" class="dropdown-item">Planos</a>
+                        <a href="team.html" class="dropdown-item">Equipe</a>
+                        <a href="open.html" class="dropdown-item">Funcionamento</a>
+                    </div>
+                </div>-->
+            </div>
+            <!--<a href="" class="btn btn-primary rounded-0 py-2 px-lg-4 d-none d-lg-block">Appointment<i class="fa fa-arrow-right ms-3"></i></a>-->
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                        <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                            <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">Deixando você com uma aparência incrível</h1>
+                            <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-map-marker-alt text-primary me-3"></i>Rua Thomaz Gonzaga, 321 - Pernambués, Salvador - BA</h4>
+                            <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-phone-alt text-primary me-3"></i>(71) 98652-2772</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="img/carousel-2.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center justify-content-center text-start">
+                        <div class="mx-sm-5 px-5" style="max-width: 900px;">
+                            <h1 class="display-2 text-white text-uppercase mb-4 animated slideInDown">Corte de cabelo de luxo a preço acessível</h1>
+                            <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-map-marker-alt text-primary me-3"></i>Rua Thomaz Gonzaga, 321 - Pernambués, Salvador - BA</h4>
+                            <h4 class="text-white text-uppercase mb-4 animated slideInDown"><i class="fa fa-phone-alt text-primary me-3"></i>(71) 98652-2772</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="d-flex flex-column">
+                        <img class="img-fluid w-75 align-self-end" src="img/about.jpg" alt="">
+                        <div class="w-50 bg-secondary p-5" style="margin-top: -25%;">
+                            <h1 class="text-uppercase text-primary mb-3">25 Anos</h1>
+                            <h2 class="text-uppercase mb-0">De Experiência</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <p class="d-inline-block bg-secondary text-primary py-1 px-4">Sobre nós</p>
+                    <h1 class="text-uppercase mb-4">Mais do que um simples corte de cabelo. Saiba mais sobre nós!</h1>
+                    <p>Com 25 anos de experiência na arte da barbearia, André Brito construiu uma carreira sólida pautada em técnica, dedicação e atenção aos detalhes. Reconhecido pelo seu profissionalismo e pelo cuidado em oferecer sempre um atendimento de excelência, ao longo dos anos se tornou referência no segmento.</p>
+
+                    <p class="mb-4">Além de atuar no atendimento ao público, também compartilha seu conhecimento por meio de cursos especializados em barbearia, formando novos profissionais qualificados e preparados para o mercado. Sua trajetória une tradição e atualização constante, contribuindo não apenas para a valorização da profissão, mas também para o crescimento de toda uma nova geração de barbeiros.</p>
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <h3 class="text-uppercase mb-3">Desde 2000</h3>
+                            <p class="mb-0">Há 25 anos no mercado se consolidou como referência em estilo, cuidado e tradição.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="text-uppercase mb-3">1000+ clientes</h3>
+                            <p class="mb-0">Atendendo clientes que buscam qualidade e confiança!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Serviços</p>
+                <h1 class="text-uppercase">O que oferecemos</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/haircut.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Corte de cabelo</h3>
+                            <p>Transforme seu visual com cortes modernos e clássicos, feitos sob medida para realçar sua personalidade e estilo. Utilizamos técnicas precisas para garantir um acabamento impecável e um visual renovado.</p>
+                            <span class="text-uppercase text-primary">From $15</span>
+                        </div>
+                        <!--<a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>-->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/beard-trim.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Barba</h3>
+                            <p>Dê o cuidado que sua barba merece. Modelagem, alinhamento e hidratação para realçar seus traços e proporcionar um visual marcante e elegante.</p>
+                            <span class="text-uppercase text-primary">From $15</span>
+                        </div>
+                        <!--<a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>-->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/mans-shave.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Navalha</h3>
+                            <p>Experimente o toque clássico da navalha. Um barbear limpo, preciso e tradicional, que une técnica e tradição para oferecer conforto e sofisticação.</p>
+                            <span class="text-uppercase text-primary">From $15</span>
+                        </div>
+                        <!--<a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>-->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/hair-dyeing.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Tintura</h3>
+                            <p>Realce sua aparência com cores que combinam com você. Trabalhamos com tinturas de alta qualidade para cobrir fios brancos, renovar o tom ou ousar em novas tonalidades.</p>
+                            <span class="text-uppercase text-primary">From $15</span>
+                        </div>
+                        <!--<a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>-->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/mustache.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Bigode</h3>
+                            <p>Pequenos detalhes fazem toda a diferença. Modelagem de bigode com precisão para destacar sua personalidade e dar um toque de estilo único ao seu rosto.</p>
+                            <span class="text-uppercase text-primary">From $15</span>
+                        </div>
+                        <!--<a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>-->
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="service-item position-relative overflow-hidden bg-secondary d-flex h-100 p-5 ps-0">
+                        <div class="bg-dark d-flex flex-shrink-0 align-items-center justify-content-center" style="width: 60px; height: 60px;">
+                            <img class="img-fluid" src="img/stacking.png" alt="">
+                        </div>
+                        <div class="ps-4">
+                            <h3 class="text-uppercase mb-3">Degradê</h3>
+                            <p>O estilo mais procurado da barbearia, feito com perfeição. Um corte versátil que combina com diferentes formatos de rosto e proporciona um visual moderno e elegante.</p>
+                            <span class="text-uppercase text-primary">From $15</span>
+                        </div>
+                        <!--<a class="btn btn-square" href=""><i class="fa fa-plus text-primary"></i></a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Price Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                        <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Preços e Planos</p>
+                        <h1 class="text-uppercase mb-4">Confira nossos serviços e preços de barbearia</h1>
+                        <div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Corte de Cabelo</h6>
+                                <span class="text-uppercase text-primary">R$35,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Corte de Cabelo com Barba</h6>
+                                <span class="text-uppercase text-primary">R$ 45,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Barba + Pé</h6>
+                                <span class="text-uppercase text-primary">R$ 50,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Barba</h6>
+                                <span class="text-uppercase text-primary">R$ 25,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Pé de Cabelo</h6>
+                                <span class="text-uppercase text-primary">R$ 15,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Sombrancelha</h6>
+                                <span class="text-uppercase text-primary">R$ 15,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <h6 class="text-uppercase mb-0">Lavagem de Cabelo</h6>
+                                <span class="text-uppercase text-primary">R$ 10,00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <img class="img-fluid h-100" src="img/price.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+                        <div class="row g-0">
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <img class="img-fluid h-100" src="img/price.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                        <div>
+                            <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">TINTURA</p>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Corte pigmentado </h6>
+                                <span class="text-uppercase text-primary">R$ 40,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Corte Cabelo e Barba Pigmentado</h6>
+                                <span class="text-uppercase text-primary">R$ 45,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Pintar o Cabelo</h6>
+                                <span class="text-uppercase text-primary">R$ 45,00</span>
+                            </div>
+
+                            <br>
+                            <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">QUÍMICA</p>
+
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Corte com Luzes </h6>
+                                <span class="text-uppercase text-primary">R$ 80,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Alisamento </h6>
+                                <span class="text-uppercase text-primary">R$ 50,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Corte com Alisamento </h6>
+                                <span class="text-uppercase text-primary">R$ 50,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Platinado </h6>
+                                <span class="text-uppercase text-primary">R$ 110,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Hidratação </h6>
+                                <span class="text-uppercase text-primary">R$ 110,00</span>
+                            </div>
+
+                            <br>
+                            <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">PRODUTOS</p>
+
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Pomada</h6>
+                                <span class="text-uppercase text-primary">R$ 22,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Óleo para Barba</h6>
+                                <span class="text-uppercase text-primary">R$ 20,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Bucha</h6>
+                                <span class="text-uppercase text-primary">R$ 25,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Minoxidil</h6>
+                                <span class="text-uppercase text-primary">R$ 35,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Sampoo ATIC</h6>
+                                <span class="text-uppercase text-primary">R$ 22,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Shampoo para Barba</h6>
+                                <span class="text-uppercase text-primary">R$ 23,00</span>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <h6 class="text-uppercase mb-0">Perfume</h6>
+                                <span class="text-uppercase text-primary">R$ 40,00</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Price End -->
+
+
+    <!-- Team Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+            <p class="d-inline-block bg-secondary text-primary py-1 px-4">Nossos Barbeiros</p>
+            <h1 class="text-uppercase">Encontre Nossos Barbeiros</h1>
+        </div>
+        <div class="row g-4 d-flex justify-content-center">
+            
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                <div class="team-item">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/team-1.jpg" alt="">
+                        <div class="team-social">
+                            <a class="btn btn-square" href="https://www.youtube.com/channel/UCARtfp6K0foky3bXKCbavGQ"><i class="fab fa-youtube"></i></a>
+                            <a class="btn btn-square" href="https://www.tiktok.com/@dedebarbearia"><i class="fab fa-tiktok"></i></a>
+                            <a class="btn btn-square" href="https://www.instagram.com/dedebrito_/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-secondary text-center p-4">
+                        <h5 class="text-uppercase">André Brito</h5>
+                        <span class="text-primary">Dedé</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="team-item">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/team-2.jpg" alt="">
+                        <div class="team-social">
+                            <a class="btn btn-square" href="https://www.instagram.com/limabarbeer/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-secondary text-center p-4">
+                        <h5 class="text-uppercase">Gabriel Lima</h5>
+                        <span class="text-primary">Gabi</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="team-item">
+                    <div class="team-img position-relative overflow-hidden">
+                        <img class="img-fluid" src="img/team-3.jpg" alt="">
+                        <div class="team-social">
+                            <a class="btn btn-square" href="https://www.instagram.com/joew_barber/"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="bg-secondary text-center p-4">
+                        <h5 class="text-uppercase">Joel da Silva</h5>
+                        <span class="text-primary">Joewzin</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<!--<div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Nossos Barbeiros</p>
+                <h1 class="text-uppercase">Encontre Nossos Barbeiros</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-1.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href="https://www.youtube.com/channel/UCARtfp6K0foky3bXKCbavGQ"><i class="fab fa-youtube"></i></a>
+                                <a class="btn btn-square" href="https://www.tiktok.com/@dedebarbearia"><i class="fab fa-tiktok"></i></a>
+                                <a class="btn btn-square" href="https://www.instagram.com/dedebrito_/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h5 class="text-uppercase">André Brito</h5>
+                            <span class="text-primary">Dedé</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-2.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href="https://www.instagram.com/limabarbeer/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h5 class="text-uppercase">Gabriel Lima</h5>
+                            <span class="text-primary">Gabi</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-3.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href="https://www.instagram.com/joew_barber/"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h5 class="text-uppercase">Joel da Silva</h5>
+                            <span class="text-primary">Joewzin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="team-item">
+                        <div class="team-img position-relative overflow-hidden">
+                            <img class="img-fluid" src="img/team-4.jpg" alt="">
+                            <div class="team-social">
+                                <a class="btn btn-square" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="bg-secondary text-center p-4">
+                            <h5 class="text-uppercase">Barber Name</h5>
+                            <span class="text-primary">Designation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <!-- Team End -->
+
+
+    <!-- Working Hours Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-0">
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <img class="img-fluid h-100" src="img/open.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    <div class="bg-secondary h-100 d-flex flex-column justify-content-center p-5">
+                        <p class="d-inline-flex bg-dark text-primary py-1 px-4 me-auto">Horário de Funcionamento</p>
+                        <h1 class="text-uppercase mb-4">Barbeiros profissionais estão esperando por você!</h1>
+                        <div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Segunda</h6>
+                                <span class="">08h às 19h</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Terça</h6>
+                                <span class="">08h às 19h</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Quarta</h6>
+                                <span class="">08h às 19h</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Quinta</h6>
+                                <span class="">08h às 19h</span>
+                            </div>
+                            <div class="d-flex justify-content-between border-bottom py-2">
+                                <h6 class="text-uppercase mb-0">Sexta</h6>
+                                <span class="">08h às 19h</span>
+                            </div>
+                            <div class="d-flex justify-content-between py-2">
+                                <h6 class="text-uppercase mb-0">Sábado e Domingo</h6>
+                                <span class="">08h às 17h</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Working Hours End -->
+
+
+    <!-- Testimonial Start -->
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <p class="d-inline-block bg-secondary text-primary py-1 px-4">Nossas avaliações</p>
+                <h1 class="text-uppercase">O que nossos clientes dizem.</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-1.jpg' alt=''>">
+                    <h4 class="text-uppercase">Felipe Castro</h4>
+                    <p class="text-primary">Analista</p>
+                    <span class="fs-5">O Dedé (André Brito) é um verdadeiro artista! O corte ficou exatamente como eu pedi, com um degradê perfeito e o alinhamento da barba impecável. O ambiente da barbearia é super agradável, a cadeira é confortável e a iluminação ajuda a relaxar. É notável o profissionalismo e a atenção aos detalhes. Não troco essa barbearia por nenhuma outra! Recomendo demais!</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-2.jpg' alt=''>">
+                    <h4 class="text-uppercase">Lucas Pereira</h4>
+                    <p class="text-primary">Comerciante</p>
+                    <span class="fs-5">Sempre sou muito bem recebido. Gabriel não só manda muito bem no corte, como também garante uma experiência incrivel. A barbearia é moderna, limpa e tem aquela vibe de barbearia raiz. É o lugar perfeito para dar um trato no visual e sair renovado. Parabéns a toda a equipe!</span>
+                </div>
+                <div class="testimonial-item text-center" data-dot="<img class='img-fluid' src='img/testimonial-3.jpg' alt=''>">
+                    <h4 class="text-uppercase">Eduardo Mendes</h4>
+                    <p class="text-primary">Empresário</p>
+                    <span class="fs-5">Joel é extremamente atencioso e detalhista sabe o que faz. Eu tinha uma ideia vaga do que queria para o meu cabelo, e ele deu as sugestões certas, resultando no melhor corte que já tive. O profissionalismo da equipe é de alto nível, desde a recepção até a finalização do serviço. É um investimento que vale cada centavo. Voltarei sempre!</span>
+                </div>
+            </div>      
+        </div>
+    </div>
+    <!-- Testimonial End -->
+    <!-- Testimonial End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-secondary text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Entre em contato</h4>
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-map-marker-alt text-primary"></span>
+                        </div>
+                        <span><a class="btn btn-link" href="https://maps.app.goo.gl/P1wSQBcZEsAgM7S28">Rua Thomás Gonzaga N° 348 Pernambués - Salvador/BA</a></span>
+                    </div>
+
+                    <div class="d-flex align-items-center mb-2">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                        <span class="fa fa-phone-alt text-primary"></span>
+                    </div>
+
+                    <span><a class="btn btn-link" href="https://wa.me/5571991432787?text=Ol%C3%A1%2C%20Ded%C3%A9%2C%20Vi%20seu%20site%2C%20estou%20interessado%20em%20cortar%20com%20voc%C3%AA%2C%20poderia%20me%20informar%20os%20hor%C3%A1rios%20dispon%C3%ADveis%3F">71 9 8652-2772</a></span>
+                    </div>
+
+                    <!--<div class="d-flex align-items-center">
+                        <div class="btn-square bg-dark flex-shrink-0 me-3">
+                            <span class="fa fa-envelope-open text-primary"></span>
+                        </div>
+                        <span>info@example.com</span>
+                    </div>-->
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Links Rápidos</h4>
+                    <a class="btn btn-link" href="">Sobre nós</a>
+                    <a class="btn btn-link" href="">Contato</a>
+                    <a class="btn btn-link" href="">Nossos serviços</a>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="text-uppercase mb-4">Mídias Sociais</h4>
+                    <div class="d-flex pt-1 m-n1">
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href="https://www.instagram.com/dedebarbeariaoficial/"><i class="fab fa-instagram"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href="https://wa.me/5571991432787?text=Ol%C3%A1%2C%20Ded%C3%A9%2C%20Vi%20seu%20site%2C%20estou%20interessado%20em%20cortar%20com%20voc%C3%AA%2C%20poderia%20me%20informar%20os%20hor%C3%A1rios%20dispon%C3%ADveis%3F"><i class="fab fa-whatsapp"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href="https://www.youtube.com/channel/UCARtfp6K0foky3bXKCbavGQ"><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-lg-square btn-dark text-primary m-1" href="https://www.tiktok.com/@dedebarbearia"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="#">Dedé Barbearia</a>, Todos os direitos reservados.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+                        Designed By <a class="border-bottom" href="https://www.linkedin.com/in/tiago-nascimento-72a98234a/">Petossauro6BZ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
